@@ -7,20 +7,19 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	int i, j;
-	int c = 0;
+	int fors;
+	int fora;
+	unsigned int res = 0;
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (fors = 0; fors <= 5; fors++)
 	{
-		if (s[i] != 32)
+		for (fora = 0; accept[fora]; fora++)
 		{
-			for (j = 0; accept[j] != '\0'; j++)
+			if (s[fors] == accept[fora])
 			{
-				if (s[i] == accept[j])
-					c++;
+				res++;
 			}
 		}
-		return (c);
 	}
-	return (c);
+	return (res);
 }
