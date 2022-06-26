@@ -25,7 +25,7 @@ int **alloc_grid(int width, int height)
 			for (; i >= 0; i--)
 				free(sperence[i]);
 			free(sperence);
-			return(NULL);
+			return (NULL);
 		}
 		for (j = 0; j < width; j++)
 			sperence[i][j] = 0;
