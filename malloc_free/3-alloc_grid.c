@@ -30,5 +30,5 @@ int **alloc_grid(int width, int height)
 		for (j = 0; j < width; j++)
 			sperence[i][j] = 0;
 	}
-	return (NULL);
+	return (sperence);
 }
