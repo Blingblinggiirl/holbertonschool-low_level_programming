@@ -17,7 +17,7 @@ int _abs(int r)
  * @o: last digit
  * Return: the value of the last digit
  */
-int print_last_digit(int o)
+nt print_last_digit(int o)
 {
 	o = o % 10;
 
