@@ -15,17 +15,30 @@ char *str_concat(char *s1, char *s2)
 
 	if (!s1 && !s2)
 		return (NULL);
-	sum = strlen(s1) + strlen(s2);
-	buffer = malloc(sum + 1);
+	if (!s1 && s2)
+		sum = strlen(s2);
+	if (s1 && !s2)
+		sum = strlen(s1);
+	if (s1 != NULL && s2 != NULL)
+		sum = strlen(s1) + strlen(s2);
+	sum = sum + 1;
+	buffer = malloc(sum);
 	if (buffer == NULL)
 		return (NULL);
-	while (i + j < sum)
+	if (!s1)
+		for (i = 0; s1[i]; i++)
+		{
+			buffer[j] = s1[i];
+			j++;
+		}
+	if (!s2)
 	{
-		if (s1[i])
-			buffer[i] = s1[i], i++;
-		if (!s1[i] && s2[j])
-			buffer[i + j] = s2[j], j++;
+		for (i = 0; s2[i]; i++)
+		{
+			buffer[j] = s2[i];
+			j++;
+		}
 	}
-	buffer[i + j] = '\0';
+	buffer[j] = '\0';
 	return (buffer);
 }
