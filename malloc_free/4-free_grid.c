@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * create_array - creates an array
- * @size: size
- * @c: char
+ * free_grid - frees a 2D grid.
+ * @grid: grid.
+ * @height: height
  * Return: array
  */
 void free_grid(int **grid, int height)
