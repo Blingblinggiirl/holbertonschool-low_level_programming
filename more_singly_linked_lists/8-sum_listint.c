@@ -1,8 +1,9 @@
 #include "lists.h"
 #include <stdlib.h>
 /**
- * free_listint2 - free a LINKED LIST
+ * sum_listint - sum LINKED LIST
  * @head: head to the linked list
+ * Return: if the list is empty, return 0.
  */
 int sum_listint(listint_t *head)
 {
