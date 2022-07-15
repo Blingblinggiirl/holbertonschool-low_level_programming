@@ -3,14 +3,14 @@
 /**
  * pop_listint - free a head node of LINKED LIST
  * @head: head to the linked list
- * Return: 
+ * Return: 0 if empty.
  */
 int pop_listint(listint_t **head)
 {
 	listint_t *list_to_free2;
 	int i = 0;
 
-	if (!head)
+	if (head == NULL)
 		return (0);
 
 	list_to_free2 = *head;
