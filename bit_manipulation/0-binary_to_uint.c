@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stddef.h>
 /**
- * binary_to_unit - converts a binary to an unsigned int
+ * binary_to_uint - converts a binary to an unsigned int
  * @b: string char
  * Return: value
  */
