@@ -1,2 +1,1 @@
-# holbertonschool-low_level_programming
-jejeje
+# holbertonschool-low_level_programmiThing
